@@ -1,3 +1,3 @@
 # blaise-sql-lab
 
-##SQLite Graphical User Interface
+## SQLite Graphical User Interface
