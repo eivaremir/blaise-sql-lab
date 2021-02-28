@@ -1,0 +1,28 @@
+*
+    margin: 0
+    padding: 0
+
+$grid-partitions: 20
+
+@for $i from 1 through $grid-partitions
+    .c-#{$i}
+        grid-template-columns: repeat(#{$i}, 1fr)
+    .r-#{$i}
+        grid-template-rows: repeat(#{$i}, 1fr)
+    
+
+.grid
+    display: grid
+    @for $i from 1 through $grid-partitions
+        .row-#{$i}
+            grid-row: #{$i}
+        .column-#{$i}
+            grid-column: #{$i}
+        @for $e from 1 through $grid-partitions
+            .row-#{$i}-#{$e}
+                grid-row: #{$i} / #{$e+1}
+            .column-#{$i}-#{$e}
+                grid-column: #{$i} / #{$e+1}
+
+.app-container
+    height: 100vh

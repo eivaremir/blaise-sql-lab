@@ -1,0 +1,33 @@
+{
+  "name": "blaise-sqlite-lab",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    
+    "electron-builder": "^22.9.1",
+    "electron": "^11.3.0"
+  },
+  "dependencies": {
+  },
+  "build":{
+    "directories":{
+      "buildResources":"static/icons/"
+    }
+    
+    
+  }
+}

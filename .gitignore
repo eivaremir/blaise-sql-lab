@@ -1,0 +1,8 @@
+node_modules
+build
+*.spec
+__pycache__
+dist
+*.exe
+blaise*.css
+*.map
